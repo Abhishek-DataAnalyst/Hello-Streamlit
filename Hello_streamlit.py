@@ -48,14 +48,6 @@ else:
 
 
     def data_exploration_page():
-        # Load the CSV data into a Pandas DataFrame
-        df = pd.read_csv('employee.csv')
-
-        st.title("Salary Distribution")
-
-        # Create a bar chart using Streamlit and Matplotlib
-        st.bar_chart(df.set_index('EmployeeID')['Salary'])
-
         # File Upload
         uploaded_file = st.file_uploader("Choose a CSV file to upload Employee Data", type="csv")
 

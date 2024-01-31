@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 
+pd.options.display.max_rows = 5
 
 login_status = st.session_state.get('login_status', False)
 
